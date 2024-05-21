@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UM-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🚗Agencia de Autos Los Shlepers🏁</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+
+    <!-- Para estructurar el HTML se usarán las siguientes etiquetas semánticas:
+    main
+    header
+    nav
+    section
+    article
+    //aside
+    Este proyecto tendrá 4 secciones contenidas dentro de un contenedor main
+    -->
+    <main class="main">
+      <!-- Lo primero que tenemos en nuestra one page es un HEADER -->
+
+      <header class="cabecera">
+        <a href="" class="cabecera__link"><img src="img/Logo.jpg" alt="Logo" class="cabecera__img">Agencia Los Shlepers🏁 </a>
+              </div>
+          </header>
+      </header>
+
+      <!-- Ahora viene una barra de navegación donde cada enlace nos llevará a otra página o a otra sección de esta misma página (esquema one page) -->
+      <div class="navegacion" id="mynavegacion">
+        <a href="#home" class="active">Inicio</a>
+        <a href="#QuienesSomos">Quienes Somos</a>
+        <a href="#contact">0 Kilometro</a>
+        <a href="Usados.html">Usados</a>
+        <a href="#Contacto">Contacto</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>   
+    
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementById("mynavegacion");
+        if (x.className === "navegacion") {
+          x.className += " responsive";
+        } else {
+          x.className = "navegacion";
+        }
+      }
+      </script>
+
+      <!-- SECCIÓN 1 -- BANNER de la Agencia de autos-->
+
+      <section class="banner">
+        <!-- Título principal y secunadrio, ojo h1 no se repite sí los otros de h2 a h6 -->
+
+        <h1>Agencia Los Shlepers🏁</h1>
+        <h2>Te ayudamos a conseguir tu vehiculo soñado, con cualquier presupuesto</h2>
+
+        <!-- Acá va una foto de bacground que se configura en el CSS (ver videos que pasé)-->
+
+        <!-- El siguiente botón puede ser opcional -->
+
+        <a href="">Saber Más</a>
+      </section>
+
+      <!-- FIN sección 1 -->
+
+      <!-- SECCION 2 es la sección ¿QUIÉNES SOMOS?, se debe llegar a esta parte con un link definido más arriva en el nav; acá se utiliza un article y un aside dentro de la section-->
+
+      <section  class="seccion-2" id="nosotros">
+        <!-- En el article hacemos una descripción general de nuestros servicios -->
+
+        <article class="bloque-izq">
+          <!-- Acá el article tiene 3 cajas, que las representamos con 3 div -->
+
+          <!-- Primer div títulos, va un título principal y un secundario con un lorem o ya con el texto real -->
+
+          <div class="izq-titulo">
+            <h2>Nuestros servicios</h2>
+            <h3>
+              Necesitas vender tu auto? Queres comprar el mejor usado? Nosotros te ayudamos
+            </h3>
+            <h3>
+              Te asesoramos y acompañamos durante todo el proceso de obtencion de tu 0km
+            </h3>
+          </div>
+
+          <!-- Segundo div una imagen alusiva de la Agencia de autos-->
+
+          <div class="izq-img">
+            <img src="https://i0.wp.com/www.wynnslocksmiths.com.au/wp-content/uploads/2019/12/autokeys.jpg?fit=750%2C500&ssl=1"alt="Acá va imagen alusiva sobre la agencia de autos"/>
+          </div>
+
+          <!-- Tercer div un párrafo alusivo a la presentación de nuestros servicios -->
+          <!-- El párrafo conviene ponerlo dentro de un div para un mejor control luego con css -->
+         
+            <p class="izq-parrafo">
+              Con nuestro equipo de profesionales, tenes la seguridad que que siempre te vas a llevar lo mejor.
+              Desde 1980 sólo clientes felices
+            </p>
+          
+        </article>
+
+        <!-- Fin del article -->
+
+        <!-- En el aside vamos a dar una breve síntesis complementaria de los servicios de autos 0KM y de usados -->
+
+        <aside class="bloque-der">
+          <!-- Una caja para el título principal con un div-->
+
+          <div class="der-titulo">
+            <h3>Acerca de nuestros autos 0KM y usados</h3>
+          </div>
+
+          <!-- Para tener un mejor control ponemos a cada imagen en un div y al título secundario y al párrafo en otro div, como antes se usó h3 ahora se usa h4 -->
+
+          <div class="der-noticias">
+            <div class="noticias-img">
+            <img src="https://img.remediosdigitales.com/ab3010/suzuki-grand-vitara1/1366_2000.jpeg" alt="Foto de 0 0KM" />
+          </div>
+
+          <div class="noticias-textos">
+            <h4>Asesoramiento para obtencion de 0km</h4>
+            <p>Te ayudamos desde la elección del modelo, hasta el momento del patentamiento y de la entrega, gestión de documentación y te acompañamos en el proceso de los tramites legales posteriores a la entrega</p>
+          </div>
+
+          <!-- Repetimos los mismos 2 div anteriores pero ahora para autos usados -->
+          </div>
+          <div class="der-noticias">
+            <div class="noticias-img">
+            <img src="https://img.olx.com.br/images/47/473439397707365.jpg" alt="Foto de auto usado" />
+          </div>
+
+          <div class="noticias-textos">
+            <h4>Flota de autos usados</h4>
+            <p>Ofrecemos una amplia gama de vehiculos usados, de todo tipo y para cualquier presupuesto
+              Ofrecemos tambien planes de financiación</p>
+          </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Fin sección 2 -->
+
+      <!-- SECCION 3. La estructura es la misma que la sección 2, posee un article y un aside principalmente. En el article iría primero una caja con su título principal y secundario, luego en otra caja va una tabla (esto a a servirnos para la segunda parte del back end, entonces la dejamos ya preparada y podrían ir datos de coches provenientes de una BD), y después sigue otra caja que contendrá  un título y otra caja donde van las imágenes de las redes sociales. Luego en el aside colocaremos un iframe y el formulario de contacto en otras dos cajas-->
+
+      <section class="seccion-3" id="contacto">
+
+        <article class="article">
+
+          <!-- div de títulos -->
+
+          <div class="tabla-titulo">
+            <h2>autos 0 KM y usados destacados</h2>
+            <h3>
+              <p>
+                La más alta variedad en vehículos 0KM y usados. Disponemos de descuentos especiales en toda las líneas de fabricación nacional. Descuentos exclusivos también en autos importados. Autos de alquiler con importantes bonificaciones. No dude en consultarnos. Los esperamos de Lunes a sábados de 10 a 20 hs.
+              </p>
+            </h3>
+          </div>
+
+          <!-- Tabla dentro de otro div -->
+
+          <div class="tabla-div">
+
+            <table class="tabla">
+
+              <!-- Encabezado de la tabla -->
+              <tr class="fila-encabezado">
+                <th class="columna">Marca</th>
+                <th class="columna">Modelo</th>
+                <th class="columna">Año</th>
+                <th class="columna">Precio</th>
+                <th class="columna">Color</th>
+              </tr>
+
+              <!-- Datos de la tabla -->
+
+              <tr class="fila-dato">
+                <td class="columna">FIAT</td>
+                <td class="columna">Cronos</td>
+                <td class="columna">0 KM</td>
+                <td class="columna">18.700.000</td>
+                <td class="columna">Azul</td>
+              </tr>
+
+              <tr class="fila-dato">
+                <td class="columna">Toyota</td>
+                <td class="columna">Corolla Cross SEG 1.8 Híbrida</td>
+                <td class="columna">0 KM</td>
+                <td class="columna">43.700.000</td>
+                <td class="columna">Roja</td>
+              </tr>
+              <tr class="fila-dato">
+                <td class="columna">Volkswagen</td>
+                <td class="columna">GOL</td>
+                <td class="columna">2014</td>
+                <td class="columna">7.500.000</td>
+                <td class="columna">Gris titanio</td>
+              </tr>
+              <tr class="fila-dato">
+                <td class="columna">Ford</td>
+                <td class="columna">Focus</td>
+                <td class="columna">2020</td>
+                <td class="columna">21.000.000</td>
+                <td class="columna">Blanco</td>
+              </tr>
+              <tr class="fila-dato">
+                <td class="columna">Renault</td>
+                <td class="columna">Clío</td>
+                <td class="columna">2018</td>
+                <td class="columna">8.900.000</td>
+                <td class="columna">Negro</td>
+              </tr>
+                 <tr class="fila-dato">
+                <td class="columna">Renault</td>
+                <td class="columna">Fuego Coupé</td>
+                <td class="columna">1989</td>
+                <td class="columna">9.900.000</td>
+                <td class="columna">Dorada</td>
+              </tr>
+                 <tr class="fila-dato">
+                <td class="columna">Fiat</td>
+                <td class="columna">Gran Siena con gas</td>
+                <td class="columna">2012</td>
+                <td class="columna">10.900.000</td>
+                <td class="columna">Negro</td>
+              </tr>
+                 <tr class="fila-dato">
+                <td class="columna">Ford</td>
+                <td class="columna">Territory</td>
+                <td class="columna">2024</td>
+                <td class="columna">49.800.000</td>
+                <td class="columna">Blanco</td>
+              </tr>
+                 <tr class="fila-dato">
+                <td class="columna">Ford</td>
+                <td class="columna">Escort Guía</td>
+                <td class="columna">1991</td>
+                <td class="columna">2.900.000</td>
+                <td class="columna">Blanco</td>
+              </tr>
+                 <tr class="fila-dato">
+                <td class="columna">Peugeot</td>
+                <td class="columna">208</td>
+                <td class="columna">0 KM</td>
+                <td class="columna">25.900.000</td>
+                <td class="columna">Azul</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Nueva caja con un título  y otro div para las imágenes de las redes sociales -->
+
+          <!-- <div class="rs-div">
+            <h3>Seguinos en nuestras redes sociales</h3>
+
+            <div class="rs-img">
+              <img src="/img/instagram.png" alt="" />
+              <img src="/img/youtube.png" alt="" />
+              <img src="/img/facebook.png" alt="" />
+              <img src="/img/whatsapp.png" alt="" />
+            </div>
+          </div> -->
+
+        </article>
+
+        <aside class="aside">
+          <!-- Va un div para el mapa y otro para el formulario -->
+
+          <div class="mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7673990284748!2d-58.446427930642066!3d-34.584751630022836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb53c81cb9f07%3A0xa90b1e25f41b33b1!2sKANSAI%20-%20Sucursal%20Palermo!5e0!3m2!1ses-419!2sar!4v1715903796944!5m2!1ses-419!2sar"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <div class="form-div">
+
+            <h3>Contáctate con Nosotros</h3>
+
+            <p>
+              La más alta flota de vehículos nuevos y usados para alquiler. Nuestro equipo de especialistas lo asesorará con el más alto nivel del mercado. Nos pondremos en contacto en el término de 24 hs para disipar todas sus inquietudes. 
+            </p>
+            <br>
+
+            <!-- Comienza formulario -->
+            <form action="" class="formulario">
+                <input class="input" type="text" placeholder="Nombre y Apellido">
+                <input class="input" type="email" placeholder="Correo electrónico">
+                <input class="input" type="tel" placeholder="Teléfono">
+                <textarea class="textarea" name="" id="4" cols="30" rows="" placeholder="Mensaje"></textarea>
+                <input class="submit" type="submit" value="Enviar">
+            </form>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Fin sección 3-->
+
+      <!-- SECCION 4 --FOOTER -->
+
+      <!-- <section class="seccion-4">
+        <nav>
+          <a href="">Inicio</a>
+          <a href="">Quiénes somos</a>
+          <a href="">0 KM</a>
+          <a href="">Usados</a>
+          <a href="">Contacto</a>
+        </nav>
+
+        <div class="contenedor-s4">
+          <div class="textos-s4">
+            <h3>subtitulo</h3>
+            <a href="">Enlace 1</a>
+            <a href="">Enlace 2</a>
+            <a href="">Enlace 3</a>
+          </div>
+
+          <div class="textos-s4">
+            <h3>subtitulo</h3>
+            <a href="">Enlace 1</a>
+            <a href="">Enlace 2</a>
+            <a href="">Enlace 3</a>
+          </div>
+
+          <div class="textos-s4">
+            <h3>subtitulo</h3>
+            <a href="">Enlace 1</a>
+            <a href="">Enlace 2</a>
+            <a href="">Enlace 3</a>
+          </div>
+
+          <div class="textos-s4">
+            <h3>subtitulo</h3>
+            <a href="">Enlace 1</a>
+            <a href="">Enlace 2</a>
+            <a href="">Enlace 3</a>
+          </div>
+        </div>
+      </section> -->
+
+
+      <!-- Comienzo de nueva sección 4 -->
+
+        <section class="seccion-4">
+
+          <!-- Defino un header de la sección 4 -->
+
+          <header class="s4-header">
+            <h2>LOS SHLEPERS CONCESIONARIO NÚMERO 1 EN VENTAS DE ARGENTINA</h2>
+            <h3>Usados seleccionados y Ofertas especiales en 0KM</h3>
+          </header>
+
+          <!-- Defino 4 cajas c1 a c4-->
+
+            <div class="caja1">
+              <img src="/img/Fiat cronos.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed inventore explicabo doloremque. Natus voluptas, nostrum quia labore ab explicabo ullam architecto assumenda adipisci in porro nobis illo. Consectetur, quis similique!</p>
+            <h2>19.000 U$S</h2>
+            </div>
+
+            <div class="caja2">
+            <img src="/img/Corolla cross.png" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed inventore explicabo doloremque. Natus voluptas, nostrum quia labore ab explicabo ullam architecto assumenda adipisci in porro nobis illo. Consectetur, quis similique!</p>
+            <h2>En Stock</h2>
+            </div>
+
+            <div class="caja3">
+                <img src="/img/Audi_car-604019_1280-removebg-preview.png" alt="">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed inventore explicabo doloremque. Natus voluptas, nostrum quia labore ab explicabo ullam architecto assumenda adipisci in porro nobis illo. Consectetur, quis similique!</p>
+            <h2>13.800 U$S</h2>
+            </div>
+
+            <div class="caja4">
+                <img src="/img/Usado_2_renault-juvaquatre-1661009_1280-removebg-preview.png" alt="">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed inventore explicabo doloremque. Natus voluptas, nostrum quia labore ab explicabo ullam architecto assumenda adipisci in porro nobis illo. Consectetur, quis similique!</p>
+            <h2>CONSULTAR !!</h2>
+            </div>
+
+            <nav class="rs-nav">
+
+              <h3>Seguinos en nuestras redes sociales</h3>
+              
+              <div class="rs-img">
+                <a href="https://www.instagram.com/"><img src="/img/instagram.png" width="50px" alt=""/></a>
+                <a href="https://www.youtube.com/"><img src="/img/youtube.png" width="50px" alt="" /></a>
+                <a href="https://www.facebook.com/"><img src="/img/facebook.png" width="50px" alt="" /></a>
+                <a href="https://www.tiktok.com/"><img src="/img/tiktok-5962992_640.png" width="50px" alt=""><a>
+                <a href="https://www.whatsapp.com/"><img src="/img/whatsapp.png" width="50px" /><a></a>
+              </div>
+              
+            </nav>
+
+          <!-- Comienza footer -->
+
+          <footer class="footer">
+               <h2>&copy; Todos los derechos reservados</h2>
+               <h3>GRUPO 16</h3>
+          </footer>
+
+        </section>
+      
+    </main>
+
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+
+  </body>
+  
+</html>
